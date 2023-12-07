@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#puan{
+   left:50%;
+   position: relative;
+   font-size: 38px;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+.oyun{
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid #000;
+}
+#pikacu{
+    width: 70px;
+    height: 70px;
+    background-image: url('pikacu.png');
+    background-size: 70px 70px;
+    position: relative;
+    top: 230px;
+}
+.jump{
+    animation: jump 0.25s linear;
+}
+
+@keyframes jump {
+    0%{
+        top:230px;
+    }
+    25%{
+        top:75px;
+    }
+    50%{
+        top:50px;
+    }
+    75%{
+        top:75px;
+    }
+    100%{
+        top:230px;
+    }
+    
+}
+
+#pokemon{
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    position: relative;
+    background-image: url('pokemon.png');
+    top:180px;
+    left:600px;
+    animation: engel 1s infinite linear;
+}
+@keyframes engel {
+    0%{
+        left:600px;
+    }
+    100%{
+        left:-30px;
+    }
+}
